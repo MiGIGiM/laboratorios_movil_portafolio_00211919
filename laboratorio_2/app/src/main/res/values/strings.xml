@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">laboratorio_2</string>
+    <string name="weight_text">Weight</string>
+    <string name="bmi_text">BMI</string>
+    <string name="kg_text">Kg</string>
+    <string name="placeholder_0">0</string>
+    <string name="height_text">Height</string>
+    <string name="cm_text">cm</string>
+</resources>
