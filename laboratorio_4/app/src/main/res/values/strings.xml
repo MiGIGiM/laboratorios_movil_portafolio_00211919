@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">laboratorio_4</string>
+    <string name="name_hint">Nombre</string>
+    <string name="app_title_text">Rellena la siguiente informacion</string>
+    <string name="email_hint">Correo Electronico</string>
+    <string name="phone_text">Numero de telefono</string>
+    <string name="save_action_text">Guardar</string>
+    <string name="title_activity_confirm_info">ConfirmInfoActivity</string>
+    <string name="title_activity_confirm_information">ConfirmInformation</string>
+    <string name="app_subtitle_text">Confirma tu informacion</string>
+    <string name="nombre_info_text">Nombre: %s</string>
+    <string name="email_info_text">Correo electronico: %s</string>
+    <string name="phone_info_text">Numero de telefono: %s</string>
+    <string name="share_action_text">Compartir</string>
+</resources>
