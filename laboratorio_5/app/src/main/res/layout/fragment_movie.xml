@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLayout"
+    android:paddingStart="@dimen/medium_gap"
+    android:paddingEnd="@dimen/medium_gap"
+    tools:context=".movieFragment">
+
+    <ImageView
+        android:id="@+id/star_was_art_box"
+        android:layout_width="250sp"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:contentDescription="@string/star_wars_3_la_venganza_de_los_sith"
+        android:src="@drawable/star_wars"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movie_title"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="@string/star_wars_3_la_venganza_de_los_sith_one_line"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/star_was_art_box" />
+
+    <TextView
+        android:id="@+id/ficcion_tv"
+        style="@style/TextAppearance.MaterialComponents.Headline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:text="@string/ciencia_ficcion_label"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_title" />
+
+    <TextView
+        android:id="@+id/star_wars_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/medium_gap"
+        android:layout_marginTop="@dimen/small_gap"
+        android:text="@string/star_wars_score_text"
+        android:textColor="@color/calification"
+        android:textSize="@dimen/score_text_size"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/ficcion_tv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movie_title" />
+
+    <TextView
+        android:id="@+id/movie_sinapsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/large_gap"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:layout_marginEnd="@dimen/large_gap"
+        android:text="@string/movie_sinapsos"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ficcion_tv" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

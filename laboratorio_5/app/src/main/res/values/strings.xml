@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">laboratorio_5</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_movie_btn_description">Agregar nueva pelicula</string>
+    <string name="billboard_label">Billboard</string>
+    <string name="star_wars_3_la_venganza_de_los_sith">Star Wars 3:\n La venganza de los Sith</string>
+    <string name="star_wars_score_text">9.8</string>
+    <string name="harry_potter_y_la_piedra_filosofal">Harry Potter y la piedra \nfilosofal</string>
+    <string name="harry_potter_score">9.5</string>
+    <string name="new_movie_label">New Movie</string>
+    <string name="name_label">Name</string>
+    <string name="category_label">Category</string>
+    <string name="description_label">Description</string>
+    <string name="calification_label">Calification</string>
+    <string name="submit_text">Submit</string>
+    <string name="star_wars_3_la_venganza_de_los_sith_one_line">Star Wars 3: La venganza de los sith</string>
+    <string name="ciencia_ficcion_label">Ciencia Ficcion</string>
+    <string name="movie_sinapsos">Star Wars Episodio III: La venganza de los Sith” es una película épica de ópera espacial estadounidense de 2005 escrita y dirigida por George Lucas. La película está ambientada tres años después de las Guerras Clon, donde Obi-Wan persigue una nueva amenaza mientras Anakin es atraído por el canciller Palpatine en una trama siniestra para gobernar la galaxia. La sinopsis oficial dice “Años después del inicio de las Guerras Clon, los nobles Caballeros Jedi lideran un ejército masivo de clones en una batalla en toda la galaxia contra los Separatistas</string>
+</resources>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundLayout"
+    android:paddingHorizontal="@dimen/medium_gap"
+    tools:context=".BillboardFragment">
+
+    <TextView
+        android:id="@+id/billboard_text"
+        style="@style/TextAppearance.MaterialComponents.Headline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/medium_gap"
+        android:text="@string/billboard_label"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/movie_one_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        app:layout_constraintTop_toBottomOf="@id/billboard_text">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/star_wars_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardLayout"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/star_was_art_box"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/star_wars_3_la_venganza_de_los_sith"
+                android:src="@drawable/star_wars"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/star_wars_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_gap"
+                android:text="@string/star_wars_3_la_venganza_de_los_sith"
+                android:textColor="@color/white"
+                android:textSize="@dimen/movie_title"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/star_was_art_box"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/star_wars_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/star_wars_score_text"
+                android:textColor="@color/calification"
+                android:textSize="@dimen/score_text_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/star_was_art_box"
+                app:layout_constraintTop_toBottomOf="@id/star_wars_title_text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/movie_two_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/medium_gap"
+        app:layout_constraintTop_toBottomOf="@id/movie_one_card_view">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/harry_potter_card"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/cardLayout"
+            android:padding="4dp">
+
+            <ImageView
+                android:id="@+id/harry_potter_art_box"
+                android:layout_width="150sp"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/harry_potter_y_la_piedra_filosofal"
+                android:src="@drawable/harry_potter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/harry_potter_title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/small_gap"
+                android:text="@string/harry_potter_y_la_piedra_filosofal"
+                android:textColor="@color/white"
+                android:textSize="@dimen/movie_title"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/harry_potter_art_box"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/harry_potter_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/small_gap"
+                android:text="@string/harry_potter_score"
+                android:textColor="@color/calification"
+                android:textSize="@dimen/score_text_size"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toRightOf="@id/harry_potter_art_box"
+                app:layout_constraintTop_toBottomOf="@id/harry_potter_title_text" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_movie_fab_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="@dimen/medium_gap"
+        android:backgroundTint="@color/buttonColor"
+        android:contentDescription="@string/add_movie_btn_description"
+        android:src="@drawable/baseline_add_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
