@@ -1,6 +1,5 @@
-package com.example.laboratorio05.ui.movie
+package com.example.laboratorio05.ui.movie.viewmodel
 
-import android.text.Spannable.Factory
 import android.util.Log
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -52,7 +51,7 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
         status.value = MOVIE_CREATED
     }
 
-    private fun clearData() {
+    fun clearData() {
         name.value = ""
         description.value = ""
         qualification.value = ""
@@ -69,12 +68,15 @@ class MovieViewModel(private val repository: MovieRepository) : ViewModel() {
         return true
     }
 
-    fun displayCurrent() {
-        Log.d("Laboratorio_06", "${name.value}, ${description.value}, ${category.value}, ${qualification.value}")
-    }
-
     fun clearStatus() {
         status.value = INACTIVE
+    }
+
+    fun setSelectedMovie(movie: MovieModel) {
+        name.value = movie.name
+        description.value = movie.description
+        category.value = movie.category
+        qualification.value = movie.qualification
     }
 
     companion object {
