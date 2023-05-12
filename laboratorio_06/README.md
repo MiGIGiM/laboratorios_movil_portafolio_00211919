@@ -31,3 +31,15 @@ En el archivo build.gradle de nivel de aplicación: agregar "dataBinding { enabl
 
 Data Binding es una función de Android que permite vincular directamente las vistas de una interfaz de usuario con los datos del modelo de la aplicación.
 Ventajas frente a findViewById: Simplificación del código, mayor seguridad, mejora del rendimiento y facilita la creación de diseños complejos.
+
+## Labo 8
+### ¿Cuál es la principal ventaja de utilizar Recycler View?
+
+La principal ventaja de utilizar RecyclerView es que permite la creación de listas de elementos de forma dinámica, es decir, que se pueden agregar o eliminar elementos de la lista en tiempo de ejecución.
+
+### Menciona los componentes de RecyclerView y la función que tiene cada uno de ellos
+
+- RecyclerView: Es el contenedor que se encarga de mostrar los elementos de la lista.
+- LayoutManager: Es el encargado de posicionar los elementos de la lista.
+- Adapter: Es el encargado de crear los elementos de la lista.
+- ViewHolder: Es el encargado de mantener las referencias de los elementos de la lista.
